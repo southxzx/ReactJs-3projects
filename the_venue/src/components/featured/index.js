@@ -9,8 +9,8 @@ const Featured = () => {
             <Carrousel/>
 
             <div className="artist_name">
-                <div className="wrapper">
-                    Ariana Grande
+                <div className="wrapper font_righteous">
+                    ORANGE CARAMEL
                 </div>
             </div>
 

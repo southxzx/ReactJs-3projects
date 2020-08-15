@@ -2,11 +2,12 @@
 body {
     padding:0;
     margin:0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
 .font_righteous {
-    font-family: 'Righteous', cursive;
+    font-family: 'Abril Fatface', cursive;
 }
 
 .bck_black {
@@ -82,28 +83,24 @@ footer .footer_copyright {
 
 .carrousel_image {
     
-    background-size: cover !important;
+    /* background-size: cover !important; */
 }
 
 .artist_name {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 400px;
-    height: 160px;
     -webkit-transform: translate(-50%, -50%);  
     transform: translate(-50%, -50%);   
     border: 2px solid white;
 }
 
 .artist_name .wrapper {
-    border: 2px solid white;
-    height: 121px;
     margin: 6px;
     text-align: center;
     color: #fff;
     font-size: 40px;
-    padding: 21px 70px 0px 70px;
+    padding: 21px 70px 21px 70px;
     text-transform: uppercase;
 }
 
@@ -128,23 +125,24 @@ footer .footer_copyright {
 .countdown_wrapper .countdown_bottom {
     display: flex;
     background: #d93d00;
-    padding: 10px 20px;
 }
 
 .countdown_wrapper .countdown_time {
-    font-size: 70px;
+    font-size: 40px;
     border-right: 1px solid #F44336;
-    margin-right: 14px;
-    padding-right: 49px;
+    text-align: center;
+    padding: 10px 30px 0px 30px;
 }
 .countdown_wrapper .countdown_item:last-child .countdown_time{
     border:none;
+    
 }
 
 .countdown_wrapper .countdown_tag {
     text-transform: uppercase;
     font-size: 20px;
-    padding-left: 7px;
+    text-align: center;
+    padding-bottom: 10px;
 }
 
 /*====================

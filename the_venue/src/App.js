@@ -1,46 +1,49 @@
-import React, { Component } from 'react';
-import './resources/styles.css';
-import { Element } from 'react-scroll';
-
-
+import React from 'react';
 import Header from './components/header_footer/Header';
 import Featured from './components/featured';
+import './resources/styles.css'
 import VunueNfo from './components/venueNfo';
-import Highlight from './components/Highlights';
-import Pricing from './components/pricing';
+import Highlights from './components/Highlights';
 import Location from './components/location';
+import Pricing from './components/pricing';
 import Footer from './components/header_footer/Footer';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App" style={{ height:"1500px",background:'cornflowerblue'}}>
+import { Element } from 'react-scroll';
+
+function App() {
+  return (
+    <div className="App" style={{ height:"1500px"}}>
+
+      <Element name="header">
         <Header/>
+      </Element>
+       
+      <Element name="featured">
+        <Featured/> 
+      </Element>
 
-        <Element name="featured">
-          <Featured/>
-        </Element>
+      <Element name="venuenfo">
+        <VunueNfo/>
+      </Element>
 
-        <Element name="venuenfo">
-          <VunueNfo/>
-        </Element>
-        
-        <Element name="highlights">
-          <Highlight/>
-        </Element>
-        
-        <Element name="pricing">
-          <Pricing/>
-        </Element>
+      <Element name="highlights">
+        <Highlights/>
+      </Element>     
+      
+      <Element name="pricing">
+        <Pricing/>
+      </Element>
 
-        <Element name="location">
-          <Location/>
-        </Element>
-        
+      <Element name="location">
+        <Location/>
+      </Element>     
+      
+      <Element name="footer">
         <Footer/>
-      </div>
-    );
-  }
+      </Element>
+      
+    </div>
+  );
 }
 
 export default App;
